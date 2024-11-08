@@ -13,6 +13,10 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: true,
       },
+      imageType: {
+        type: Sequelize.STRING(50),  // Thêm cột imageType
+        allowNull: true            // Có thể đặt là false nếu muốn đảm bảo mỗi ảnh đều có loại
+      },
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false,

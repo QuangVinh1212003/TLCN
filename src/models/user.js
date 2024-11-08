@@ -65,6 +65,11 @@ module.exports = (sequelize, DataTypes) => {
         key: 'imageID',
       },
     },
+    gender: {  // Thêm cột gender
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: 0,  // 0 là Nữ, 1 là Nam
+    },
   }, {
     sequelize,
     modelName: 'User',
